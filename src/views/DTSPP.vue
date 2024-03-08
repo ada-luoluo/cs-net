@@ -98,7 +98,6 @@
       </div>
     </div>
   </section>
-
 <!--  申请程序-->
   <section class="common-tb-120 page-wrapper">
     <div class="content-main">
@@ -380,8 +379,6 @@
       </div>
     </div>
   </section>
-
-
 </template>
 
 <script>

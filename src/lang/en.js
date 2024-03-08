@@ -702,7 +702,6 @@ export default {
         dtspp104: 'Small and medium-sized enterprises submit summary reports on the portal',
         dtspp105: 'Check the completeness of the report and supporting documentation',
         dtspp106: 'Release the second grant'
-
     }
 
 
