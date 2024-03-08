@@ -19,7 +19,7 @@
           </div>
 
           <div class="index-nav-frame-line add-menu" tabindex="-1" @click="mobileClick">
-            <router-link :to="{ path: `/${$i18n.locale}/development` }" :class="{'active': $route.path === '/about'}">
+            <router-link :to="{ path: `/${$i18n.locale}/development` }">
               {{ $t("menu.customize") }}
             </router-link>
             <div class="d-menu">
@@ -61,10 +61,10 @@
           </div>
 
           <div class="index-nav-frame-line  add-menu" tabindex="-1" @click="mobileClick">
-            <router-link :to="{ path: `/${$i18n.locale}/TVP` }" :class="{'active': $route.path === '/TVP'}">
+            <router-link :to="{ path: `/${$i18n.locale}/TVP` }">
               {{ $t("menu.funding") }}
             </router-link>
-            <div class="d-menu">
+            <div class="d-menu"  @click.stop>
               <ul>
                 <li>
                   <router-link :to="{ path: `/${$i18n.locale}/TVP` }"  >
@@ -178,13 +178,18 @@ export default {
   color: var(--background);
 }
 
+
+.add-menu .router-link-exact-active{
+  color:#000
+}
+
 .index-nav-frame-line a.active:after {
   content: '';
   display: block;
   width:100%;
   height: 1px;
   background-color: #fff;
-  border-bottom: 2px solid var(--background);
+  /*border-bottom: 2px solid var(--background);*/
   border-radius: 3px;
   position: absolute;
   bottom: -10px;
@@ -214,7 +219,7 @@ export default {
   background: #fff;
   box-shadow: 0px 2px 6px rgba(121, 121, 121, 0.25);
   padding: 10px;
-  width: 120px;
+  width: 180px;
   display: none;
 }
 
