@@ -349,7 +349,7 @@
       </table>
       <div class="elementor-wrap-top">
         <div class="elementor-wrap">
-          <!--          item-->
+          <!-- item-->
           <div class="elementor-wrap-item" :class="{'elementor-wrap-item-3':(index+1)%3 === 0}"  v-for="(item,index) in supplier" :key="index">
             <div class="text">
               <div class="svgIcon">
